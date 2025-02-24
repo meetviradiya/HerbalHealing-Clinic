@@ -29,3 +29,34 @@ const observer = new IntersectionObserver((entries) => {
 
 // Attach the observer to each .hidden element
 hiddenElements.forEach((el) => observer.observe(el));
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionButtons = document.querySelectorAll(".accordion-btn");
+
+  accordionButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Toggle active class on the parent .accordion-item
+      const accordionItem = btn.parentElement;
+      const content = accordionItem.querySelector(".accordion-content");
+      const icon = btn.querySelector(".icon");
+
+      // If it's already open, close it
+      if (accordionItem.classList.contains("active")) {
+        accordionItem.classList.remove("active");
+        content.style.maxHeight = 0;
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        // Close any other open accordion
+        document.querySelectorAll(".accordion-item.active").forEach((openItem) => {
+          openItem.classList.remove("active");
+          openItem.querySelector(".accordion-content").style.maxHeight = 0;
+          openItem.querySelector(".icon").style.transform = "rotate(0deg)";
+        });
+
+        // Open this one
+        accordionItem.classList.add("active");
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.style.transform = "rotate(180deg)";
+      }
+    });
+  });
+});

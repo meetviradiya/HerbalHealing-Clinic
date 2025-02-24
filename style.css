@@ -684,6 +684,12 @@ body {
     .panchakarma-list1 li {
         width: 100%;
     }
+    .panchakarma-list1{
+        margin-bottom: 0px;
+    }
+    .facilities-content1{
+        padding-bottom: 10px;
+    }
 }
 
 /* Wellness Section */
@@ -706,7 +712,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10%;
+    padding: -1 10%;
 }
 
 /* Text Content */
@@ -1054,30 +1060,31 @@ body {
     }
 }
 
-  /***********************************************
+/***********************************************
     TESTIMONIALS SECTION
   ***********************************************/
-  .testimonials-section {
-    background: #fff; /* White section background */
+.testimonials-section {
+    background: #fff;
+    /* White section background */
     padding: 50px 10%;
-  }
-  
-  /* Container */
-  .container {
+}
+
+/* Container */
+.container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* Top Row: Subheading + Main Heading (Left), Button (Right) */
-  .testimonials-header {
+}
+
+/* Top Row: Subheading + Main Heading (Left), Button (Right) */
+.testimonials-header {
     /* display: flex; */
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
-  }
-  
-  /* Subheading & Main Heading Group */
-  .title-group h4 {
+}
+
+/* Subheading & Main Heading Group */
+.title-group h4 {
     font-size: 16px;
     color: #8A2C46;
     display: flex;
@@ -1085,18 +1092,20 @@ body {
     font-weight: 600;
     margin-bottom: 5px;
     text-align: center;
-  }
-  .title-group h4 i {
+}
+
+.title-group h4 i {
     margin-right: 5px;
-  }
-  .title-group h2 {
+}
+
+.title-group h2 {
     font-size: 28px;
     color: #5B2233;
     line-height: 1.3;
-  }
-  
-  /* "More Testimonials" Button */
-  .btn-more {
+}
+
+/* "More Testimonials" Button */
+.btn-more {
     text-decoration: none;
     font-size: 14px;
     color: #8A2C46;
@@ -1104,83 +1113,93 @@ body {
     padding: 8px 12px;
     border-radius: 4px;
     transition: background 0.3s ease, color 0.3s ease;
-  }
-  .btn-more:hover {
+}
+
+.btn-more:hover {
     background: #8A2C46;
     color: #fff;
-  }
-  
-  /***********************************************
+}
+
+/***********************************************
     GRID OF TESTIMONIAL CARDS
   ***********************************************/
-  .testimonials-grid {
+.testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
     gap: 20px;
-  }
-  
-  /* Individual Card */
-  .testimonial-card {
-    background: #fff;       /* Card background */
-    border: 1px solid #eee; /* Light border */
+}
+
+/* Individual Card */
+.testimonial-card {
+    background: #fff;
+    /* Card background */
+    border: 1px solid #eee;
+    /* Light border */
     border-radius: 8px;
     padding: 20px;
-    position: relative;     /* For quote icon positioning */
+    position: relative;
+    /* For quote icon positioning */
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* Hover Effect */
-  .testimonial-card:hover {
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
-  }
-  
-  /* Testimonial Text */
-  .testimonial-card p {
+}
+
+/* Testimonial Text */
+.testimonial-card p {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
     margin-bottom: 15px;
-  }
-  
-  /* Name & Subtitle */
-  .testimonial-card h5 {
+}
+
+/* Name & Subtitle */
+.testimonial-card h5 {
     font-size: 16px;
     color: #5B2233;
     margin-bottom: 5px;
     font-weight: 600;
-  }
-  .testimonial-card span {
+}
+
+.testimonial-card span {
     font-size: 14px;
     color: #8A2C46;
-  }
-  
-  /* Quote Icon in Bottom Right */
-  .quote-icon {
+}
+
+/* Quote Icon in Bottom Right */
+.quote-icon {
     position: absolute;
     bottom: 15px;
     right: 15px;
     font-size: 30px;
     color: #9B2C2C;
-    opacity: 0.2; /* Faint effect */
-  }
-  
-  /***********************************************
+    opacity: 0.2;
+    /* Faint effect */
+}
+
+/***********************************************
     RESPONSIVE DESIGN
   ***********************************************/
-  /* Single column on smaller screens */
-  @media (max-width: 768px) {
+/* Single column on smaller screens */
+@media (max-width: 768px) {
     .testimonials-grid {
-      grid-template-columns: 1fr; /* 1 column */
+        grid-template-columns: 1fr;
+        /* 1 column */
     }
+
     .title-group h2 {
-      font-size: 24px;
+        font-size: 24px;
     }
+
     .testimonial-card p {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
-  
+}
+
 
 /* Section Styles */
 .title-group1 h4 {
@@ -1190,88 +1209,384 @@ body {
     align-items: center;
     font-weight: 600;
     margin-bottom: 5px;
-  }
-  .title-group1 h4 i {
+}
+
+.title-group1 h4 i {
     margin-right: 5px;
-  }
-  .title-group1 h2 {
+}
+
+.title-group1 h2 {
     font-size: 28px;
     color: #5B2233;
     line-height: 1.3;
-  }
+}
 
 .clinic-experience-section {
-    background: #FFFBEA; /* Off-white background */
+    background: #FFFBEA;
+    /* Off-white background */
     padding: 50px 10%;
-    text-align: center;  /* Center the heading */
-  }
-  .image-gallery{
+    text-align: center;
+    /* Center the heading */
+}
+
+.image-gallery {
     width: 100%;
-    display: flex;   
+    display: flex;
     justify-content: center;
-   }
-   
-  .clinic-experience-section h2 {
+}
+
+.clinic-experience-section h2 {
     font-size: 28px;
-    color: #5B2233;      /* Warm, Ayurvedic color */
-    margin-bottom: 40px; /* Space below heading */
-  }
-  
-  /* Image Row */
-  .clinic-image-row {
+    color: #5B2233;
+    /* Warm, Ayurvedic color */
+    margin-bottom: 40px;
+    /* Space below heading */
+}
+
+/* Image Row */
+.clinic-image-row {
     display: flex;
     width: 30%;
-    flex-wrap: wrap;       /* Wrap images on smaller screens */
+    flex-wrap: wrap;
+    /* Wrap images on smaller screens */
     justify-content: flex-end;
-    gap: 20px;             /* Space between images */
-  }
-  
-  /* Individual Images */
-  .clinic-image-row img {
-    width: 300px;          /* Fixed width to match screenshot’s style */
-    height: 220px;         /* Make them square, as in the screenshot */
-    object-fit: cover;     /* Crop nicely if aspect ratio differs */
-    border-radius: 8px;    /* Slightly rounded corners */
-  }
+    gap: 20px;
+    /* Space between images */
+}
 
-  .clinic-image-row1 {
+/* Individual Images */
+.clinic-image-row img {
+    width: 300px;
+    /* Fixed width to match screenshot’s style */
+    height: 220px;
+    /* Make them square, as in the screenshot */
+    object-fit: cover;
+    /* Crop nicely if aspect ratio differs */
+    border-radius: 8px;
+    /* Slightly rounded corners */
+}
+
+.clinic-image-row1 {
     display: flex;
     width: 30%;
-    flex-wrap: wrap;       /* Wrap images on smaller screens */
+    flex-wrap: wrap;
+    /* Wrap images on smaller screens */
     justify-content: space-around;
-    gap: 20px;             /* Space between images */
-  }
-  .clinic-image-row1 img {
-    width: 300px;          /* Fixed width to match screenshot’s style */
-    height: 220px;         /* Make them square, as in the screenshot */
-    object-fit: cover;     /* Crop nicely if aspect ratio differs */
-    border-radius: 8px;    /* Slightly rounded corners */
-  }
+    gap: 20px;
+    /* Space between images */
+}
 
-  .clinic-image-row2 {
+.clinic-image-row1 img {
+    width: 300px;
+    /* Fixed width to match screenshot’s style */
+    height: 220px;
+    /* Make them square, as in the screenshot */
+    object-fit: cover;
+    /* Crop nicely if aspect ratio differs */
+    border-radius: 8px;
+    /* Slightly rounded corners */
+}
+
+.clinic-image-row2 {
     display: flex;
     width: 30%;
-    flex-wrap: wrap;       /* Wrap images on smaller screens */
+    flex-wrap: wrap;
+    /* Wrap images on smaller screens */
     justify-content: space-between;
-    gap: 20px;             /* Space between images */
-  }
-  .clinic-image-row2 img {
-    width: 300px;          /* Fixed width to match screenshot’s style */
-    height: 100%;         /* Make them square, as in the screenshot */
-    object-fit: cover;     /* Crop nicely if aspect ratio differs */
-    border-radius: 8px;    /* Slightly rounded corners */
-  }
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
+    gap: 20px;
+    /* Space between images */
+}
+
+.clinic-image-row2 img {
+    width: 300px;
+    /* Fixed width to match screenshot’s style */
+    height: 100%;
+    /* Make them square, as in the screenshot */
+    object-fit: cover;
+    /* Crop nicely if aspect ratio differs */
+    border-radius: 8px;
+    /* Slightly rounded corners */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
     .clinic-image-row img {
-      width: 45%;          /* 2 images per row on tablets/smaller devices */
-      height: auto;        /* Maintain aspect ratio; object-fit keeps them neat */
+        width: 45%;
+        /* 2 images per row on tablets/smaller devices */
+        height: auto;
+        /* Maintain aspect ratio; object-fit keeps them neat */
     }
+}
+
+@media (max-width: 480px) {
+    .clinic-image-row img {
+        width: 80%;
+        /* 1 image per row on very small screens */
+        margin-bottom: 20px;
+        /* Space below images */
+    }
+    .image-gallery{
+        display: grid;
+    }
+    .clinic-image-row img{
+        display: contents;
+    }
+    .clinic-experience-section h2{
+        font-size: 12px;
+    }
+}
+
+
+/* FAQ Section Wrapper */
+.faq-section {
+    padding: 50px 10%;
   }
   
-  @media (max-width: 480px) {
-    .clinic-image-row img {
-      width: 80%;          /* 1 image per row on very small screens */
-      margin-bottom: 20px; /* Space below images */
+  /* Container for Image + Accordion */
+  .faq-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  /* Left Side Image */
+  .faq-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Right Side Accordion */
+  .faq-accordion {
+    flex: 1;
+    color: #333;
+  }
+  
+  .faq-accordion h4 {
+    font-size: 16px;
+    color: #8A2C46;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .faq-accordion h2 {
+    font-size: 28px;
+    color: #5B2233;
+    margin-bottom: 30px;
+    line-height: 1.3;
+  }
+  
+  /* Accordion Items */
+  .accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  /* Accordion Button */
+  .accordion-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    color: #5B2233;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .accordion-btn:hover {
+    background: #f2f2f2;
+  }
+  
+  /* Icon rotation (will handle in JS) */
+  .icon {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Accordion Content */
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    padding: 0 20px;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-content p {
+    font-size: 15px;
+    color: #333;
+    margin: 15px 0;
+    line-height: 1.6;
+  }
+  
+  /*******************************************
+    RESPONSIVE BREAKPOINTS
+  ********************************************/
+  @media (max-width: 992px) {
+    .faq-container {
+      flex-direction: column;
+    }
+  
+    .faq-image img {
+      max-width: 100%;
+      margin-bottom: 20px;
     }
   }
+
+  
+
+/* Footer Wrapper */
+.footer {
+  background: #f8f9fa; /* Light gray for top section */
+  color: #333;
+  padding: 0px 10%;
+  margin: 0 auto;
+}
+
+/* Top Section with 3 Columns */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+
+/* Each Column */
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Social Icons */
+.footer-social a {
+  margin-right: 10px;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+.footer-social a:hover {
+  color: #9b2c2c;
+}
+
+.social-icons a .facebook {
+    background: #3b5998;
+    /* Facebook blue */
+}
+
+/* Hover Effects - Color Change */
+.footer-social a:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect */
+}
+
+/* Unique Hover Colors */
+.footer-social a:nth-child(1):hover {
+    background: #1877F2;
+    color: white;
+    /* Facebook */
+}
+
+
+.footer-social a:nth-child(2):hover {
+    background: #E1306C;
+    color: white;
+    /* Instagram */
+}
+
+.footer-social a:nth-child(3):hover {
+    background: #DB4437;
+    color: white;
+    /* Google */
+}
+
+.footer-social a:nth-child(4):hover {
+    background: #0077B5;
+    color: white;
+    /* LinkedIn */
+}
+
+/* Center Column Links */
+.footer-center h4 {
+  color: #5B2233;
+  font-size: 16px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.footer-center li {
+  margin-bottom: 5px;
+}
+.footer-center li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+.footer-center li a:hover {
+  color: #9b2c2c;
+}
+
+/* Right Column - Map */
+.footer-right h4 {
+  color: #5B2233;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.map-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  background: #e9ecef; /* Slightly darker gray */
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/********************************************
+  RESPONSIVE BREAKPOINTS
+********************************************/
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-col {
+    margin-bottom: 20px;
+  }
+}
