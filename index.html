@@ -32,8 +32,8 @@
   </div>
 
   <nav class="navbar">
-    <a href="#" class="logo">
-      <img src="logo.jpg" alt="Logo">
+    <a href="./index.html" class="logo">
+      <img src="./img/mv-high-resolution-logo-black.png" alt="Logo">
     </a>
 
     <div class="hamburger" id="hamburger">
@@ -41,16 +41,16 @@
     </div>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Treatments</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#" class="btn-primary mobile-btn">Book Appointment</a></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./aboutus.html">About Us</a></li>
+      <li><a href="./treatments.html">Treatments</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./testimonials.html">Testimonials</a></li>
+      <li><a href="./contactus.html">Contact Us</a></li>
+      <li><a href="./contactus.html" class="btn-primary mobile-btn">Book Appointment</a></li>
     </ul>
 
-    <a href="#" class="btn-primary desktop-btn">Book Appointment</a>
+    <a href="./contactus.html" class="btn-primary desktop-btn">Book Appointment</a>
   </nav>
 
   <script>
@@ -63,7 +63,7 @@
   </script>
 
 
-<section class="hero hidden" data-aos="fade-in">
+  <section class="hero hidden" data-aos="fade-in">
     <div class="hero-content">
       <h3>Lorem ipsum dolor sit amet.</h3>
       <h1>
@@ -72,7 +72,7 @@
       </h1>
       <a href="#" class="btn-primary">Book Appointment</a>
     </div>
-</section>
+  </section>
 
   <!-- Floating Buttons -->
   <div class="floating-icons">
@@ -85,7 +85,7 @@
   </div>
 
   <!-- About Section -->
-  <section class="about-section hidden" data-aos="fade-up">
+  <section class="about-section hidden" data-aos="fade-up" id="aboutus">
     <div class="container">
       <!-- Left Side Image -->
       <div class="about-image">
@@ -262,7 +262,7 @@
 
 
 
-  <section class="treatment-section">
+  <section class="treatment-section" id="treatment">
     <div class="treatment-overlay">
       <div class="treatment-content">
         <!-- Subheading -->
@@ -364,7 +364,7 @@
   </section>
 
 
-  <section class="testimonials-section">
+  <section class="testimonials-section" id="testimonial">
     <div class="container">
       <!-- Top row: subheading/main heading on the left, button on the right -->
       <div class="testimonials-header">
@@ -567,11 +567,7 @@
     <div class="footer-top">
       <!-- Left Column -->
       <div class="footer-col footer-left">
-        <img
-          src="https://via.placeholder.com/100x100"
-          alt="Clinic Logo"
-          class="footer-logo"
-        />
+        <img src="./img/mv-high-resolution-logo-black.png" alt="Clinic Logo" class="footer-logo" />
         <p>DemoTemplate@mail.com</p>
         <p>+91 1234567890</p>
         <div class="footer-social">
@@ -606,34 +602,28 @@
         <h4>Location</h4>
         <div class="map-container">
           <!-- Replace the iframe src with your own map link -->
-          <iframe
-            src="https://maps.google.com/maps?q=Ahmedabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="200"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <iframe src="https://maps.google.com/maps?q=Ahmedabad&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
+            height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
 
     <!-- Bottom Section -->
- 
-  </footer>
-   <div class="footer-bottom">
-      <p>
-        Copyright &copy; 2023
-        <strong>Clinic Name</strong>. All rights reserved |
-        Develop by <strong>Freelancer</strong>
-      </p>
-    </div>
 
-  <script src="script.js"></script>
+  </footer>
+  <div class="footer-bottom">
+    <p>
+      Copyright &copy; 2023
+      <strong>Clinic Name</strong>. All rights reserved |
+      Develop by <strong>MV</strong>
+    </p>
+  </div>
+
+  <script src="./JavaScript/script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-  AOS.init();
+    AOS.init();
   </script>
 
 </body>

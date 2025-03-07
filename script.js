@@ -1,40 +1,46 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
+document.addEventListener("DOMContentLoaded", () => {
 
-    hamburger.addEventListener("click", function () {
-        navLinks.classList.toggle("active"); // Toggle menu visibility
-        hamburger.classList.toggle("active"); // Toggle 'X' icon
+    //  1. Hamburger Menu
+
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      // Toggle .active on both hamburger icon and navLinks
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
     });
-});
+  }
 
-// Select all elements you want to animate
-const hiddenElements = document.querySelectorAll(".hidden");
 
-// Create an Intersection Observer
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    // If element is in viewport, add "show" class
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-      // Optional: Stop observing once shown
-      observer.unobserve(entry.target);
+    //  2. Intersection Observer for .hidden Elements
+
+  const hiddenElements = document.querySelectorAll(".hidden");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target); // Stop observing once shown
+        }
+      });
+    },
+    {
+      root: null,
+      threshold: 0.1,
     }
-  });
-}, {
-  // Optional options
-  root: null,          // viewport
-  threshold: 0.1,      // how much of the element is visible to trigger
-});
+  );
 
-// Attach the observer to each .hidden element
-hiddenElements.forEach((el) => observer.observe(el));
-document.addEventListener("DOMContentLoaded", function () {
+  hiddenElements.forEach((el) => observer.observe(el));
+
+    //  3. Accordion
+
   const accordionButtons = document.querySelectorAll(".accordion-btn");
 
   accordionButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      // Toggle active class on the parent .accordion-item
       const accordionItem = btn.parentElement;
       const content = accordionItem.querySelector(".accordion-content");
       const icon = btn.querySelector(".icon");
@@ -57,6 +63,18 @@ document.addEventListener("DOMContentLoaded", function () {
         content.style.maxHeight = content.scrollHeight + "px";
         icon.style.transform = "rotate(180deg)";
       }
+    });
+  });
+
+
+    //  4. Collapse Nav on Link Click
+
+  const navLinksItems = document.querySelectorAll('#navLinks li a');
+  navLinksItems.forEach(link => {
+    link.addEventListener('click', () => {
+      // Collapse the mobile menu after clicking a nav link
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
     });
   });
 });

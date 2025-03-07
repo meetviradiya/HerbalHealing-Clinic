@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="top-header">
+        <!-- Social Icons (Left Side) -->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <!-- Contact Info (Right Side) -->
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i> <a href="mailto:DemoTemplate@mail.com">DemoTemplate@mail.com</a>
+            <i class="fas fa-phone"></i> <a href="tel:+911234567890">+91 1234567890</a>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="./index.html" class="logo">
+            <img src="./img/mv-high-resolution-logo-black.png" alt="Logo">
+        </a>
+
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./treatments.html">Treatments</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./testimonials.html">Testimonials</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+            <li><a href="./contactus.html" class="btn-primary mobile-btn">Book Appointment</a></li>
+        </ul>
+
+        <a href="./contactus.html" class="btn-primary desktop-btn">Book Appointment</a>
+    </nav>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- About Us Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Testimonials</h1>
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Testimonials</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main About Content (optional) -->
+    <!-- <section class="about-section">
+        <div class="about-container">
+            <h2>Our Story</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio veniam,
+                voluptatibus harum consequatur numquam deserunt nam officiis maxime modi
+                repellat quo. Minus, quas tempore molestiae rem reprehenderit dignissimos
+                explicabo provident!
+            </p>
+          
+        </div>
+    </section> -->
+
+    <section class="testimonials-section" id="testimonial" data-aos="fade-up">
+        <div class="container">
+            <!-- Top row: subheading/main heading on the left, button on the right -->
+            <div class="testimonials-header">
+                <div class="title-group">
+                    <h4><i class="fas fa-plus-circle"></i> TESTIMONIALS</h4>
+                    <h2>What Our Patients Says</h2>
+                </div>
+                <a href="#" class="btn-more">More Testimonials</a>
+            </div>
+
+            <!-- 2×2 Grid of Testimonial Cards -->
+            <div class="testimonials-grid">
+
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, itaque deleniti delectus nam
+                        ipsum
+                        obcaecati veritatis facere animi. Eius reiciendis quam expedita officia ad soluta eveniet
+                        maiores unde
+                        voluptatum ab.
+                    </p>
+                    <h5>Lorem, ipsum.</h5>
+                    <span>Happy Patients</span>
+                    <i class="fas fa-quote-right quote-icon"></i>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sit ex id corrupti voluptatibus
+                        laborum
+                        debitis ad dolore aperiam eius ratione vel, voluptates, temporibus aliquid soluta inventore
+                        molestiae.
+                        Reiciendis, expedita.
+                    </p>
+                    <h5>Lorem, ipsum.</h5>
+                    <span>Happy Patients</span>
+                    <i class="fas fa-quote-right quote-icon"></i>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid excepturi beatae eum explicabo
+                        dicta, earum
+                        repellat sapiente fugiat maiores reprehenderit odio ratione nihil labore, ea, distinctio
+                        eveniet?
+                        Aspernatur, eligendi at?
+                    </p>
+                    <h5>Lorem, ipsum.</h5>
+                    <span>Happy Patients</span>
+                    <i class="fas fa-quote-right quote-icon"></i>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="testimonial-card">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis sunt deserunt quia soluta,
+                        harum quo.
+                        Sed iste ad saepe fugiat consequuntur neque. Delectus incidunt nobis accusantium earum. Error,
+                        maiores
+                        totam.
+                    </p>
+                    <h5>Lorem, ipsum.</h5>
+                    <span>Happy Patients</span>
+                    <i class="fas fa-quote-right quote-icon"></i>
+                </div>
+
+            </div> <!-- End .testimonials-grid -->
+        </div> <!-- End .container -->
+    </section>
+
+    <footer class="footer">
+        <!-- Top Section with 3 Columns -->
+        <div class="footer-top">
+            <!-- Left Column -->
+            <div class="footer-col footer-left">
+                <img src="./img/mv-high-resolution-logo-black.png" alt="Clinic Logo" class="footer-logo" />
+                <p>DemoTemplate@mail.com</p>
+                <p>+91 1234567890</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Center Column -->
+            <div class="footer-col footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+
+                <h4>Our Treatments</h4>
+                <ul>
+                    <li><a href="#">Respiratory Diseases</a></li>
+                    <li><a href="#">Neurological Diseases</a></li>
+                    <li><a href="#">Menstrual Disorders</a></li>
+                    <li><a href="#">Skin Diseases</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Column -->
+            <div class="footer-col footer-right">
+                <h4>Location</h4>
+                <div class="map-container">
+                    <!-- Replace the iframe src with your own map link -->
+                    <iframe src="https://maps.google.com/maps?q=Ahmedabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+
+    </footer>
+    <div class="footer-bottom">
+        <p>
+            Copyright &copy; 2023
+            <strong>Clinic Name</strong>. All rights reserved |
+            Develop by <strong>MV</strong>
+        </p>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

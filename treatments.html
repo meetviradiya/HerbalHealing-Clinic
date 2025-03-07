@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treatments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="top-header">
+        <!-- Social Icons (Left Side) -->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <!-- Contact Info (Right Side) -->
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i> <a href="mailto:DemoTemplate@mail.com">DemoTemplate@mail.com</a>
+            <i class="fas fa-phone"></i> <a href="tel:+911234567890">+91 1234567890</a>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="./index.html" class="logo">
+            <img src="./img/mv-high-resolution-logo-black.png" alt="Logo">
+        </a>
+
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./treatments.html">Treatments</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./testimonials.html">Testimonials</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+            <li><a href="./contactus.html" class="btn-primary mobile-btn">Book Appointment</a></li>
+        </ul>
+
+        <a href="./contactus.html" class="btn-primary desktop-btn">Book Appointment</a>
+    </nav>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- About Us Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Treatments</h1>
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Treatments</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main About Content (optional) -->
+    <!-- <section class="about-section">
+        <div class="about-container">
+            <h2>Our Story</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio veniam,
+                voluptatibus harum consequatur numquam deserunt nam officiis maxime modi
+                repellat quo. Minus, quas tempore molestiae rem reprehenderit dignissimos
+                explicabo provident!
+            </p>
+           
+        </div>
+    </section> -->
+    <section class="treatment-section" id="treatment" data-aos="fade-up">
+        <div class="treatment-overlay">
+            <div class="treatment-content">
+                <!-- Subheading -->
+                <h4><i class="fas fa-plus-circle"></i> OUR TREATMENT</h4>
+                <!-- Main Heading -->
+                <h2>Holistic Healing with Signature Ayurvedic Treatments</h2>
+
+                <!-- 3×3 Grid -->
+                <div class="treatment-grid">
+
+                    <!-- Card 1 -->
+                    <div class="treatment-card">
+                        <h3>Digestive and Metabolic Disorders</h3>
+                        <p>
+                            Holistic Ayurvedic care for hyperacidity, bloating, constipation, GERD, and more—restore
+                            balance
+                            naturally.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="treatment-card">
+                        <h3>Endocrine and Metabolic Disorders</h3>
+                        <p>
+                            Personalized Ayurvedic solutions for diabetes, hypothyroidism, hormonal imbalances, and
+                            more—achieve
+                            harmony naturally.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="treatment-card">
+                        <h3>Bone and Muscular Disorders</h3>
+                        <p>
+                            Ayurvedic care for arthritis, joint pain, back pain, and muscle stiffness—promoting strength
+                            and mobility
+                            naturally!
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="treatment-card">
+                        <h3>Respiratory Diseases</h3>
+                        <p>
+                            Effective Ayurvedic treatments for asthma, bronchitis, sinusitis, and allergies—breathe
+                            easier.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="treatment-card">
+                        <h3>Skin Diseases</h3>
+                        <p>
+                            Natural Ayurvedic solutions for eczema, psoriasis, acne, and more—nourish your skin
+                            naturally.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="treatment-card">
+                        <h3>Neurological Diseases</h3>
+                        <p>
+                            Holistic approach to migraines, headaches, and neurological issues—revitalize your mind-body
+                            connection.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="treatment-card">
+                        <h3>Obesity and Lipid Disorders</h3>
+                        <p>
+                            Comprehensive solutions for weight management, cholesterol control, and lipid
+                            imbalances—embrace a
+                            healthier you.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="treatment-card">
+                        <h3>Menstrual Disorders</h3>
+                        <p>
+                            Ayurvedic remedies to regulate cycles, reduce cramps, and balance hormones—support your
+                            well-being.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div class="treatment-card">
+                        <h3>Sleep Disorders</h3>
+                        <p>
+                            Ayurvedic approach for insomnia, restless nights, and poor-quality sleep—drift into a
+                            restful night.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                </div><!-- End treatment-grid -->
+            </div><!-- End treatment-content -->
+        </div><!-- End overlay -->
+    </section>
+
+    <footer class="footer">
+        <!-- Top Section with 3 Columns -->
+        <div class="footer-top">
+            <!-- Left Column -->
+            <div class="footer-col footer-left">
+                <img src="./img/mv-high-resolution-logo-black.png" alt="Clinic Logo" class="footer-logo" />
+                <p>DemoTemplate@mail.com</p>
+                <p>+91 1234567890</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Center Column -->
+            <div class="footer-col footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+
+                <h4>Our Treatments</h4>
+                <ul>
+                    <li><a href="#">Respiratory Diseases</a></li>
+                    <li><a href="#">Neurological Diseases</a></li>
+                    <li><a href="#">Menstrual Disorders</a></li>
+                    <li><a href="#">Skin Diseases</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Column -->
+            <div class="footer-col footer-right">
+                <h4>Location</h4>
+                <div class="map-container">
+                    <!-- Replace the iframe src with your own map link -->
+                    <iframe src="https://maps.google.com/maps?q=Ahmedabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+
+    </footer>
+    <div class="footer-bottom">
+        <p>
+            Copyright &copy; 2023
+            <strong>Clinic Name</strong>. All rights reserved |
+            Develop by <strong>MV</strong>
+        </p>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

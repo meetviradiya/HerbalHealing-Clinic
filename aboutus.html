@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+<body>
+    <div class="top-header">
+        <!-- Social Icons (Left Side) -->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <!-- Contact Info (Right Side) -->
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i> <a href="mailto:DemoTemplate@mail.com">DemoTemplate@mail.com</a>
+            <i class="fas fa-phone"></i> <a href="tel:+911234567890">+91 1234567890</a>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="./index.html" class="logo">
+            <img src="./img/mv-high-resolution-logo-black.png" alt="Logo">
+        </a>
+
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./treatments.html">Treatments</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./testimonials.html">Testimonials</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+            <li><a href="./contactus.html" class="btn-primary mobile-btn">Book Appointment</a></li>
+        </ul>
+
+        <a href="./contactus.html" class="btn-primary desktop-btn">Book Appointment</a>
+    </nav>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- About Us Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>About Us</h1>
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main About Content (optional) -->
+    <!-- <section class="about-section">
+        <div class="about-container">
+            <h2>Our Story</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio veniam,
+                voluptatibus harum consequatur numquam deserunt nam officiis maxime modi
+                repellat quo. Minus, quas tempore molestiae rem reprehenderit dignissimos
+                explicabo provident!
+            </p>
+           
+        </div>
+    </section> -->
+    <!-- About Section -->
+    <section class="about-section" data-aos="fade-up" id="aboutus">
+        <div class="container">
+            <!-- Left Side Image -->
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    width="-webkit-fill-available;" alt="Code Image" />
+            </div>
+            <!-- Right Side Content -->
+            <div class="about-content">
+                <h4>
+                    <i class="fas fa-plus-circle"></i> ABOUT OUR CLINIC
+                </h4>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, consequuntur? Reiciendis
+                    accusantium, natus
+                    omnis deserunt dolor aliquam saepe quisquam nemo. Dic traditions and integrating them with modern
+                    wellness
+                    practices to promote overall health and well-being.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, repellat voluptas? Debitis delectus
+                    placeat
+                    iure ullam, reiciendis quod vel. Qui.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem ex sunt quo vel beatae eos
+                    necessitatibus
+                    ea, doloribus vero?
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Top Section with 3 Columns -->
+        <div class="footer-top">
+            <!-- Left Column -->
+            <div class="footer-col footer-left">
+                <img src="./img/mv-high-resolution-logo-black.png" alt="Clinic Logo" class="footer-logo" />
+                <p>DemoTemplate@mail.com</p>
+                <p>+91 1234567890</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Center Column -->
+            <div class="footer-col footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+
+                <h4>Our Treatments</h4>
+                <ul>
+                    <li><a href="#">Respiratory Diseases</a></li>
+                    <li><a href="#">Neurological Diseases</a></li>
+                    <li><a href="#">Menstrual Disorders</a></li>
+                    <li><a href="#">Skin Diseases</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Column -->
+            <div class="footer-col footer-right">
+                <h4>Location</h4>
+                <div class="map-container">
+                    <!-- Replace the iframe src with your own map link -->
+                    <iframe src="https://maps.google.com/maps?q=Ahmedabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+
+    </footer>
+    <div class="footer-bottom">
+        <p>
+            Copyright &copy; 2023
+            <strong>Clinic Name</strong>. All rights reserved |
+            Develop by <strong>MV</strong>
+        </p>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
