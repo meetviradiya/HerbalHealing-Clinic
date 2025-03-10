@@ -10,7 +10,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    /* Hides horizontal scrolling */
     scroll-behavior: smooth;
 }
 
@@ -18,10 +17,8 @@ body {
 .top-header {
     display: flex;
     justify-content: space-between;
-    /* Push items to the edges */
     align-items: center;
     background: #f5f5f5;
-    /* Dark background */
     padding: 10px 50px;
     font-size: 14px;
     color: black;
@@ -85,7 +82,6 @@ body {
 /* Hover Effects - Color Change */
 .social-icons a:hover {
     transform: scale(1.1);
-    /* Slight zoom effect */
 }
 
 /* Unique Hover Colors */
@@ -119,7 +115,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    /* Reduced padding for mobile */
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -129,14 +124,12 @@ body {
 
 .navbar .logo img {
     height: 40px;
-    /* Slightly smaller logo on mobile */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 15px;
-    /* Reduced gap on mobile */
 }
 
 .nav-links li {
@@ -148,42 +141,42 @@ body {
     color: #333;
     font-weight: 600;
     transition: 0.3s;
-    /* Added transition for smoother hover effects */
+    width: 100%;
 }
 
 .nav-links a:hover {
     color: #9b2c2c;
+    width: 100%;
 }
 
 .btn-primary {
     background: #9b2c2c;
     color: white;
     padding: 8px 16px;
-    /* Reduced padding on mobile */
     text-decoration: none;
     font-size: 14px;
-    /* Slightly smaller font size */
     border-radius: 5px;
     transition: 0.3s;
     white-space: nowrap;
-    /* Prevent button text from wrapping */
 }
 
 .btn-primary:hover {
     background: #7a1f1f;
 }
 
-/* Mobile Styles */
 .hamburger {
     display: none;
-    /* Hide hamburger on desktop */
     cursor: pointer;
-    font-size: 24px;
-    color: #333;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.hamburger:hover {
-    color: #9b2c2c;
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #333;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 .mobile-btn {
@@ -192,46 +185,56 @@ body {
 
 
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu-toggle:checked~.nav-links {
+        display: flex;
+    }
+
+    /* Toggle Hamburger Icon into an X */
+    .menu-toggle:checked+.hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
 
     /* Adjust breakpoint as needed */
     .nav-links {
         display: none;
-        /* Hide nav links on mobile */
         flex-direction: column;
-        /* Stack links vertically */
         position: absolute;
         top: 60px;
-        /* Adjust based on navbar height */
         left: 0;
         /* width: 100%; */
-
         background-color: white;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         text-align: center;
         z-index: 101;
-        /* Ensure it's above other content */
         width: -webkit-fill-available;
         padding-left: 0px;
     }
 
     .nav-links.active {
-        /* Show nav links when hamburger is clicked */
         display: flex;
     }
 
     .nav-links li {
         display: block;
-        /* Each link takes full width */
         padding: 15px 0;
-        /* Add padding to links */
         border-bottom: 1px solid #eee;
-        /* Add separator lines */
     }
 
     .nav-links a {
         color: #333;
         display: block;
-        /* Make links fill the list item width */
     }
 
     .nav-links a:hover {
@@ -239,8 +242,7 @@ body {
     }
 
     .hamburger {
-        display: block;
-        /* Show hamburger on mobile */
+        /* display: block; */
     }
 
     .desktop-btn {
@@ -255,7 +257,6 @@ body {
 .hero {
     width: 100%;
     height: 100vh;
-    /* Full viewport height */
     background: url('https://koshayurved.nexushealth.in/assets/img/bg-1.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     position: relative;
@@ -273,7 +274,6 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
-    /* Dark overlay */
 }
 
 .hero-content {
@@ -315,13 +315,11 @@ body {
     .hero {
         width: -webkit-fill-available;
         height: auto;
-        /* Adjust height for smaller screens */
         padding: 50px 20px;
     }
 
     .hero-content h1 {
         font-size: 28px;
-        /* Adjust font size */
     }
 
     .container {
@@ -362,7 +360,6 @@ body {
 .about-section {
     padding: 50px 10%;
     background-color: #fffbea;
-    /* Subtle background (optional) */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -394,10 +391,8 @@ body {
     color: #333;
     font-size: 16px;
     line-height: 1.8;
-    /* Comfortable reading line height */
     margin-bottom: 15px;
     text-align: justify;
-    /* Optional: gives a neat block alignment */
 }
 
 /* Responsive Adjustments */
@@ -421,10 +416,8 @@ body {
     color: #333;
     font-size: 16px;
     line-height: 1.8;
-    /* Comfortable reading line height */
     margin-bottom: 15px;
     text-align: justify;
-    /* Optional: gives a neat block alignment */
 }
 
 
@@ -655,14 +648,12 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        /* Stack image & text vertically on mobile */
         flex-direction: column;
         align-items: center;
         gap: 0px !important;
     }
 
     .facilities-image {
-        /* Ensure the image is placed first (on top) */
         order: -1;
     }
 
@@ -740,12 +731,10 @@ body {
 }
 
 
-/**************************************
-  SECTION WRAPPER
-**************************************/
+/* SECTION WRAPPER */
+
 .process-section {
     background: #FFFBEA;
-    /* Subtle background */
     padding: 50px 10%;
     color: #5B2233;
     font-family: 'Poppins', sans-serif;
@@ -755,17 +744,14 @@ body {
 .process-container {
     /* display: flex; */
     align-items: flex-start;
-    /* Top-align the content */
     gap: 50px;
-    /* Spacing between left & right */
 }
 
-/**************************************
-    LEFT SIDE (HEADINGS)
-  **************************************/
+
+/* LEFT SIDE (HEADINGS) */
+
 .process-left {
     flex: 1;
-    /* Take less space than the cards */
 }
 
 .process-left h4 {
@@ -786,27 +772,24 @@ body {
     color: #5B2233;
     line-height: 1.3;
     margin-bottom: 30px;
-    /* Space below heading */
 }
 
-/**************************************
-    RIGHT SIDE (CARDS)
-  **************************************/
+
+/* RIGHT SIDE (CARDS) */
+
 .process-right {
     flex: 2;
-    /* Wider column for cards */
 }
 
 .process-cards {
     display: flex;
     gap: 20px;
-    /* flex-wrap: wrap;             Allow wrapping on smaller screens */
+    /* flex-wrap: wrap; */
 }
 
 /* Individual Card */
 .process-card {
     flex: 1 1 calc(25% - 20px);
-    /* 4 cards across on large screens */
     background: #fffbea;
     border: 1px solid #641a38;
     border-radius: 8px;
@@ -814,7 +797,6 @@ body {
     text-align: left;
     transition: box-shadow 0.3s ease;
     min-width: 220px;
-    /* Prevent cards from getting too narrow */
 }
 
 /* Card Icon */
@@ -843,23 +825,21 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/**************************************
-    RESPONSIVE (TABLET & MOBILE)
-  **************************************/
+/* RESPONSIVE (TABLET & MOBILE) */
+
 @media (max-width: 992px) {
 
-    /* If you want 2 cards per row on medium screens */
     .process-card {
         flex: 1 1 calc(50% - 20px);
     }
-    .process-section{
+
+    .process-section {
         padding: 50px 4%;
     }
 }
 
 @media (max-width: 768px) {
 
-    /* Stack everything vertically on small screens */
     .process-container {
         flex-direction: column;
     }
@@ -871,11 +851,9 @@ body {
 
     .process-cards {
         justify-content: center;
-        /* Center cards on mobile */
         flex-wrap: wrap;
     }
 
-    /* 1 card per row on mobile */
     .process-card {
         flex: 1 1 100%;
     }
@@ -895,10 +873,11 @@ body {
     .process-card p {
         font-size: 14px;
     }
-    .process-section{
+
+    .process-section {
         padding: 50px 4%;
     }
-    
+
 }
 
 /* Elements are initially hidden/translated */
@@ -918,7 +897,6 @@ body {
 /* Section with Background Image */
 .treatment-section {
     position: relative;
-    /* Replace with your actual background image URL */
     background: url("https://images.unsplash.com/photo-1607743386760-88ac62b89b8a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     padding: 50px 4%;
     min-height: 100vh;
@@ -941,7 +919,6 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    /* Adjust darkness as needed */
     z-index: 0;
 }
 
@@ -949,11 +926,9 @@ body {
 .treatment-content {
     position: relative;
     z-index: 1;
-    /* Above overlay */
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    /* Center headings & grid */
     color: #fff;
 }
 
@@ -961,7 +936,6 @@ body {
 .treatment-content h4 {
     font-size: 16px;
     color: #8A2C46;
-    /* Maroonish color for subheading */
     display: inline-flex;
     align-items: center;
     margin-bottom: 10px;
@@ -980,13 +954,11 @@ body {
     color: #fff;
 }
 
-/********************************************
-    3×3 GRID
-  ********************************************/
+/* 3×3 GRID */
+
 .treatment-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 columns on desktop */
     gap: 20px;
 }
 
@@ -1019,7 +991,6 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #f0f0f0;
-    /* Slightly off-white for contrast */
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -1041,10 +1012,9 @@ body {
     /* Darken on hover */
 }
 
-/********************************************
-    RESPONSIVE BREAKPOINTS
-  ********************************************/
-/* 2 columns on medium screens */
+
+/* RESPONSIVE BREAKPOINTS */
+
 @media (max-width: 992px) {
     .treatment-content h2 {
         font-size: 28px;
@@ -1055,7 +1025,6 @@ body {
     }
 }
 
-/* 1 column on small screens */
 @media (max-width: 768px) {
     .treatment-content h2 {
         font-size: 20px;
@@ -1074,12 +1043,11 @@ body {
     }
 }
 
-/***********************************************
-    TESTIMONIALS SECTION
-  ***********************************************/
+
+/* TESTIMONIALS SECTION */
+
 .testimonials-section {
     background: #fff;
-    /* White section background */
     padding: 50px 10%;
 }
 
@@ -1089,7 +1057,6 @@ body {
     margin: 0 auto;
 }
 
-/* Top Row: Subheading + Main Heading (Left), Button (Right) */
 .testimonials-header {
     /* display: flex; */
     align-items: center;
@@ -1097,7 +1064,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Subheading & Main Heading Group */
 .title-group h4 {
     font-size: 16px;
     color: #8A2C46;
@@ -1118,7 +1084,6 @@ body {
     line-height: 1.3;
 }
 
-/* "More Testimonials" Button */
 .btn-more {
     text-decoration: none;
     font-size: 14px;
@@ -1134,26 +1099,21 @@ body {
     color: #fff;
 }
 
-/***********************************************
-    GRID OF TESTIMONIAL CARDS
-  ***********************************************/
+/* GRID OF TESTIMONIAL CARDS */
+
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* 2 columns */
     gap: 20px;
 }
 
 /* Individual Card */
 .testimonial-card {
     background: #fff;
-    /* Card background */
     border: 1px solid #eee;
-    /* Light border */
     border-radius: 8px;
     padding: 20px;
     position: relative;
-    /* For quote icon positioning */
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -1195,14 +1155,11 @@ body {
     /* Faint effect */
 }
 
-/***********************************************
-    RESPONSIVE DESIGN
-  ***********************************************/
-/* Single column on smaller screens */
+/* RESPONSIVE DESIGN */
+
 @media (max-width: 768px) {
     .testimonials-grid {
         grid-template-columns: 1fr;
-        /* 1 column */
     }
 
     .title-group h2 {
@@ -1212,7 +1169,8 @@ body {
     .testimonial-card p {
         font-size: 14px;
     }
-    .testimonials-section{
+
+    .testimonials-section {
         padding: 50px 4%;
     }
 }
@@ -1240,10 +1198,8 @@ body {
 
 .clinic-experience-section {
     background: #FFFBEA;
-    /* Off-white background */
     padding: 50px 10%;
     text-align: center;
-    /* Center the heading */
 }
 
 .image-gallery {
@@ -1255,9 +1211,7 @@ body {
 .clinic-experience-section h2 {
     font-size: 28px;
     color: #5B2233;
-    /* Warm, Ayurvedic color */
     margin-bottom: 40px;
-    /* Space below heading */
 }
 
 /* Image Row */
@@ -1265,75 +1219,56 @@ body {
     display: flex;
     width: 30%;
     flex-wrap: wrap;
-    /* Wrap images on smaller screens */
     justify-content: flex-end;
     gap: 20px;
-    /* Space between images */
 }
 
 /* Individual Images */
 .clinic-image-row img {
     width: 300px;
-    /* Fixed width to match screenshot’s style */
     height: 220px;
-    /* Make them square, as in the screenshot */
     object-fit: cover;
-    /* Crop nicely if aspect ratio differs */
     border-radius: 8px;
-    /* Slightly rounded corners */
 }
 
 .clinic-image-row1 {
     display: flex;
     width: 30%;
     flex-wrap: wrap;
-    /* Wrap images on smaller screens */
     justify-content: space-around;
     gap: 20px;
-    /* Space between images */
 }
 
 .clinic-image-row1 img {
     width: 300px;
-    /* Fixed width to match screenshot’s style */
     height: 220px;
-    /* Make them square, as in the screenshot */
     object-fit: cover;
-    /* Crop nicely if aspect ratio differs */
     border-radius: 8px;
-    /* Slightly rounded corners */
 }
 
 .clinic-image-row2 {
     display: flex;
     width: 30%;
     flex-wrap: wrap;
-    /* Wrap images on smaller screens */
     justify-content: space-between;
     gap: 20px;
-    /* Space between images */
 }
 
 .clinic-image-row2 img {
     width: 300px;
-    /* Fixed width to match screenshot’s style */
     height: 100%;
-    /* Make them square, as in the screenshot */
     object-fit: cover;
-    /* Crop nicely if aspect ratio differs */
     border-radius: 8px;
-    /* Slightly rounded corners */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .clinic-image-row img {
         width: 45%;
-        /* 2 images per row on tablets/smaller devices */
         height: auto;
-        /* Maintain aspect ratio; object-fit keeps them neat */
     }
-    .clinic-experience-section{
+
+    .clinic-experience-section {
         text-align: left;
     }
 }
@@ -1341,9 +1276,7 @@ body {
 @media (max-width: 480px) {
     .clinic-image-row img {
         width: 80%;
-        /* 1 image per row on very small screens */
         margin-bottom: 20px;
-        /* Space below images */
     }
 
     .image-gallery {
@@ -1455,9 +1388,8 @@ body {
     line-height: 1.6;
 }
 
-/*******************************************
-    RESPONSIVE BREAKPOINTS
-  ********************************************/
+/* RESPONSIVE BREAKPOINTS */
+
 @media (max-width: 992px) {
     .faq-container {
         flex-direction: column;
@@ -1474,7 +1406,6 @@ body {
 /* Footer Wrapper */
 .footer {
     background: #f8f9fa;
-    /* Light gray for top section */
     color: #333;
     padding: 0px 10%;
     margin: 0 auto;
@@ -1527,7 +1458,6 @@ body {
 /* Hover Effects - Color Change */
 .footer-social a:hover {
     transform: scale(1.1);
-    /* Slight zoom effect */
 }
 
 /* Unique Hover Colors */
@@ -1603,16 +1533,14 @@ body {
 /* Bottom Section */
 .footer-bottom {
     background: #e9ecef;
-    /* Slightly darker gray */
     text-align: center;
     padding: 10px;
     font-size: 14px;
     color: #333;
 }
 
-/********************************************
-  RESPONSIVE BREAKPOINTS
-********************************************/
+/* RESPONSIVE BREAKPOINTS */
+
 @media (max-width: 768px) {
     .footer-top {
         flex-direction: column;
@@ -1626,12 +1554,9 @@ body {
 /* About Hero Section */
 .about-hero {
     background-color: #f9f9f9;
-    /* Light background or use an image if desired */
     text-align: center;
     padding: 60px 20px;
-    /* Adjust spacing as needed */
     border-bottom: 1px solid #eee;
-    /* Subtle bottom border */
 }
 
 .about-hero-content {
@@ -1641,9 +1566,7 @@ body {
 
 .about-hero h1 {
     font-size: 3rem;
-    /* Large heading */
     color: #8A2C46;
-    /* Matches your brand color */
     margin-bottom: 10px;
 }
 
@@ -1654,7 +1577,6 @@ body {
     padding: 0;
     margin: 0;
     gap: 5px;
-    /* Space between items */
     font-size: 0.9rem;
     color: #555;
 }
@@ -1677,21 +1599,18 @@ body {
 .breadcrumb a:hover {
     text-decoration: underline;
     color: #8A2C46;
-    /* Hover color to match brand */
 }
 
 /* Main About Section */
 .about-section {
     padding: 40px 20px;
     background-color: #fff;
-    /* White or any background color you prefer */
 }
 
 .about-container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    /* Center text, optional */
 }
 
 .about-section h2 {
@@ -1724,49 +1643,36 @@ body {
 /* Responsive Grid */
 .gallery-grid {
     display: grid;
-    /* auto-fit places as many 250px columns as will fit, 
-       but you can adjust the minmax(...) values */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Each Gallery Item: fixed aspect ratio (4:3) */
 .gallery-item {
     position: relative;
     aspect-ratio: 4 / 3;
-    /* Ensures uniform height/width ratio */
     overflow: hidden;
     border-radius: 8px;
-    /* Optional rounded corners */
 }
 
-/* Make images fill the container without distortion */
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Crop the image instead of distorting */
     display: block;
     transition: transform 0.3s ease;
 }
 
-/* Hover Zoom Effect (Optional) */
 .gallery-item:hover img {
     transform: scale(1.05);
 }
 
-
-/* Contact Section Wrapper */
 .contact-section {
     background-color: #f9f9f9;
-    /* Light background */
     padding: 60px 20px;
 }
 
-
-/* Contact Section Wrapper */
 .contact-section {
     background-color: #f9f9f9;
     padding: 60px 20px;
@@ -1778,10 +1684,8 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Equal-width columns */
     gap: 40px;
     align-items: stretch;
-    /* Ensures both columns stretch to the same height */
 }
 
 /* Common Column Styling */
@@ -1792,7 +1696,6 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    /* Make the columns fill the full height of the row */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1802,7 +1705,6 @@ body {
 .contact-left h2 {
     font-size: 2rem;
     color: #8A2C46;
-    /* Brand color */
     margin-bottom: 10px;
 }
 
@@ -1908,7 +1810,6 @@ body {
     .contact-container {
         grid-template-columns: 1fr;
         gap: 0px;
-        /* Single column on smaller screens */
     }
 
     .contact-left,
@@ -1918,6 +1819,5 @@ body {
 
     .submit-btn {
         align-self: center;
-        /* Center button on smaller screens */
     }
 }
